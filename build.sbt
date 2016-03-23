@@ -1,4 +1,4 @@
-name := "scala-skeleton"
+name := "bowling-kata"
 
 version := "1.0"
 
