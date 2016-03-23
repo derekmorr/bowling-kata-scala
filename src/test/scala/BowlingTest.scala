@@ -5,7 +5,7 @@ class Bowling2Test extends BaseTest {
 
   "Bowling2" must {
     "score games" when {
-      "all gutter balls (all zero)" ignore {
+      "all gutter balls (all zero)" in {
         val frames = List(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
         Bowling.score(frames) must === (0)
       }
