@@ -15,7 +15,7 @@ class Bowling2Test extends BaseTest {
         Bowling.score(frames) must === (60)
       }
 
-      "all spares with first ball a 4" ignore {
+      "all spares with first ball a 4" in {
         val frames = List(4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4)
         Bowling.score(frames) must === (140)
       }
