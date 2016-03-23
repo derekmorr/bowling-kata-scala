@@ -10,7 +10,7 @@ class Bowling2Test extends BaseTest {
         Bowling.score(frames) must === (0)
       }
 
-      "all threes" ignore {
+      "all threes" in {
         val frames = List(3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3)
         Bowling.score(frames) must === (60)
       }
