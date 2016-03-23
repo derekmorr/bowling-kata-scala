@@ -8,6 +8,11 @@ object Bowling {
   type IntermediateResult = (Int, List[Int])
 
   private def scoreFrame(score: Int, throws: List[Int]): IntermediateResult = throws match {
+    // strike
+    case 10 :: tail => {
+      val frameScore = 10 + (tail take 2 sum)
+      (score + frameScore, tail)
+    }
     // spare
     case first :: second :: tail if first + second === 10 => {
       val frameScore = 10 + (throws take 1 sum)
